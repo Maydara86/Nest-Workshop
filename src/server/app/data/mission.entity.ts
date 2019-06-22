@@ -13,6 +13,8 @@ export class MissionEntity implements Mission {
   title: string;
   reward: number;
   active: boolean;
+  @Exclude()
   createdAt = new Date();
+  @Exclude()
   createdBy = 'user';
 }
